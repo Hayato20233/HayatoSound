@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title data-i18n="pageTitle">🎤 Hayato Sound 🎶</title>
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="icon" href="assets/logo-favicon.png" type="image/png">
+
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat :wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark-mode">
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1 class="logo-title" data-i18n="pageTitle">
+                <img src="assets/logo-favicon.png" alt="Hayato Sound Logo" class="site-logo" onerror="this.onerror=null;this.src='https://placehold.co/50x50/00A86B/FFFFFF?text=HS ';">
+                🎤 Hayato Sound 🎶
+            </h1>
+
+            <!-- Navegación -->
+            <nav>
+                <!-- Selector de idioma -->
+                <select id="language-switcher" class="language-switcher">
+                    <option value="en">English</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Français</option>
+                    <option value="pt">Português</option>
+                </select>
+
+                <!-- Modo claro/oscuro -->
+                <div class="mode-toggle-container">
+                    <span class="mode-icon">🌙</span>
+                    <label class="mode-toggle">
+                        <input type="checkbox" id="mode-toggle">
+                        <span class="slider round"></span>
+                    </label>
+                    <span class="mode-icon">☀️</span>
+                </div>
+
+                <!-- Menú hamburguesa -->
+                <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+
+                <!-- Enlaces de navegación -->
+                <ul class="nav-links">
+                    <li><a href="#interviews" data-i18n="interviewsNav">Interviews</a></li>
+                    <li><a href="#podcasts" data-i18n="podcastsNav">Podcasts</a></li>
+                    <li><a href="#artists" data-i18n="artistsNav">Artists</a></li>
+                    <li><a href="#about" data-i18n="aboutNav">About Us</a></li>
+                    <li><a href="#contact" data-i18n="socialNav">Social Media</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Dinámico - cargado por script.js -->
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p data-i18n="footerText">© 2025 🎤 Hayato Sound 🎶. All rights reserved.</p>
+        </div>
+
+        <a title="a"><img src="https://counter1.optistats.ovh/private/contadorvisitasgratis.php?c=2t81twcyswk3al4b8xzj9parbule5s21" border="0" title="Ya formas parte de nuestra estadística!" alt="contador de visitas online"></a>
+
+    </footer>
+
+    <!-- Selector flotante de color -->
+    <div class="floating-color-picker">
+        <button id="color-picker-toggle" class="color-picker-toggle" aria-label="Toggle Color Themes">🎨</button>
+        <div class="color-options-container" id="color-options-container">
+            <div class="color-button" id="green-theme-btn" data-theme="dark" aria-label="Green Theme"></div>
+            <div class="color-button" id="pink-theme-btn" data-theme="pink" aria-label="Pastel Pink Theme"></div>
+            <div class="color-button" id="purple-theme-btn" data-theme="purple" aria-label="Pastel Purple Theme"></div>
+        </div>
+    </div>
+
+    <!-- Script principal -->
+    <script src="script.js"></script>
+</body>
+</html>
